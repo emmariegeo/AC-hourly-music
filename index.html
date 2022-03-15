@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACNH Music by the Hour</title>
+    <link rel="icon" type="image/png" href="https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://neopets.com&size=16">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+
+<body>
+    <div class="main-container" id="main-container">
+        <!-- Weather Buttons -->
+        <div class="weather-button-container">
+            <button class="weather-button no-hover weather-button-clicked" id="sunny" title="Sunny Weather">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <button class="weather-button" id="snowy" title="Snowy Weather">
+                <i class="fa-solid fa-snowflake"></i>
+            </button>
+            <button class="weather-button" id="rainy" title="Rainy Weather">
+                <i class="fa-solid fa-droplet"></i>
+            </button>
+        </div>
+        <!-- Song -->
+        <audio>Hourly Music</audio>
+        <!-- Song Title -->
+        <div class="songTitle-text">
+            <span id = "songTitle">Loading...</span>
+        </div>
+        <!-- Week Day -->
+        <div class="weekDay-text">
+            <span id="weekDay"></span>
+        </div>
+        <!-- Clock -->
+        <div class="clock-container" id="clock-container">
+            <div class="clock" id="clock">
+                <svg class ="clock-hands" id = "clock-hands" viewBox="0 0 600 600">
+                    <g id="hour">
+                        <path class="hour-arm" d="M300.5 298V142" />
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                    </g>
+                    <g id="minute">
+                        <path class="minute-arm" d="M300.5 298V67" />
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                    </g>
+                    <g id="second">
+                        <path class="second-arm" d="M300.5 350V55" />
+                        <circle class="sizing-box" cx="300" cy="300" r="253.9" />
+                    </g>    
+                    <circle class="mid-circle" cx="300" cy="300" r="20.5" />
+                </svg>
+            </div>
+        </div>
+        <!-- Clock Buttons -->
+        <div class="clock-button-container">
+            <button id="backward" title="Previous hour">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button id="reset" title="Reset Time">
+                <i class="fa-solid fa-user-clock"></i>
+            </button>
+            <button id="forward" title="Next hour">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+        </div>
+    </div>
+    <!--Loader-->
+    <div class="loader" id="loader"></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
