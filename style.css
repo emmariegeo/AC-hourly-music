@@ -1,59 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* Fonts */
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2)
+    format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw9aXpsog.woff2)
+    format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw2aXpsog.woff2)
+    format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXpsog.woff2)
+    format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    background-color: #cdeae8;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
-    color: #000;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #cdeae8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-container {
-    height: 500px;
-    min-width: 400px;
-    max-width: 1000px;
-    border-radius: 20%;
-    gap: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 500px;
+  min-width: 400px;
+  max-width: 1000px;
+  border-radius: 20%;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Clock Styles */
 .clock-container {
-    width: 15rem;
-    align-self: center;
-    justify-content: center;
-    flex: 1 1;
+  width: 15rem;
+  align-self: center;
+  justify-content: center;
+  flex: 1 1;
 }
 
 .clock {
-    background-image: url(clockGreen.svg);
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
+  background-image: url(/svgs/clockGreen.svg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .clock-hands {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 .sizing-box {
-    fill: none;
-    width: auto;
+  fill: none;
+  width: auto;
 }
 
 #hour,
@@ -64,112 +119,269 @@ body {
 }
 
 .minute-arm {
-    fill: none;
-    stroke: #231f20;
-    stroke-width: 11;
-    stroke-miterlimit: 10;
-    stroke-linecap:round;
+  fill: none;
+  stroke: #231f20;
+  stroke-width: 11;
+  stroke-miterlimit: 10;
+  stroke-linecap: round;
 }
 .hour-arm {
-    fill: none;
-    stroke: #231f20;
-    stroke-width: 17;
-    stroke-miterlimit: 10;
-    stroke-linecap:round;
+  fill: none;
+  stroke: #231f20;
+  stroke-width: 17;
+  stroke-miterlimit: 10;
+  stroke-linecap: round;
 }
 
 .second-arm {
-    stroke:#f05a22;
-    fill:none;
-    stroke-linecap:round;
-    stroke-miterlimit:3.86;
-    stroke-width:1.87px;
+  stroke: #f05a22;
+  fill: none;
+  stroke-linecap: round;
+  stroke-miterlimit: 3.86;
+  stroke-width: 1.87px;
 }
 
 .mid-circle {
-    fill: #231f20;
-    transform-origin: 300px 300px;
+  fill: #231f20;
+  transform-origin: 300px 300px;
 }
 
 /* Song Label */
 .songTitle-text {
-    font-size: 1rem;
-    text-transform: capitalize;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 
 .long-songTitle {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 /* Day Label */
 .weekDay-text {
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
 }
 /* Button Styles */
 .clock-button-container {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    gap:10px;
-    flex: 1 1;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex: 1 1;
 }
 .weather-button-container {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap:10px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    cursor: pointer;
-    font-size: 1.2rem;
-    height: 3rem;
-    width: 3rem;
-    border: none;
-    border-radius: 100%;
-    color: #fff;
-    background: #9c3;
-    outline: none;
-    box-shadow: 0 0.3rem rgba(121,121,121, 0.65);
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 100%;
+  color: #fff;
+  background: #9c3;
+  outline: none;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
 }
 
 .weather-button {
-    background: #38a1f3;
-    color:white;
+  background: #38a1f3;
+  color: white;
 }
 .weather-button-clicked {
-    filter: brightness(90%);
-    color:white;
-    cursor: default;
-    transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, .65);
+  filter: brightness(90%);
+  color: white;
+  cursor: default;
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
-.no-hover{
-    pointer-events: none;
+.no-hover {
+  pointer-events: none;
 }
 
 button:hover {
-    filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 button:active {
-    transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, .65);
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
+
+/* Icons */
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url('../webfonts/fa-solid-900.woff2') format('woff2'),
+      url('../webfonts/fa-solid-900.ttf') format('truetype');
+  }
+  .fa {
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: var(--fa-style, 900); }
+  
+  .fa,
+  .fas,
+  .fa-solid,
+  .far,
+  .fa-regular,
+  .fal,
+  .fa-light,
+  .fat,
+  .fa-thin,
+  .fad,
+  .fa-duotone,
+  .fab,
+  .fa-brands {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto; }
+  
+  .fa-1x {
+    font-size: 1em; }
+  
+  .fa-2x {
+    font-size: 2em; }
+  
+  .fa-3x {
+    font-size: 3em; }
+  
+  .fa-4x {
+    font-size: 4em; }
+  
+  .fa-5x {
+    font-size: 5em; }
+  
+  .fa-6x {
+    font-size: 6em; }
+  
+  .fa-7x {
+    font-size: 7em; }
+  
+  .fa-8x {
+    font-size: 8em; }
+  
+  .fa-9x {
+    font-size: 9em; }
+  
+  .fa-10x {
+    font-size: 10em; }
+  
+  .fa-2xs {
+    font-size: 0.625em;
+    line-height: 0.1em;
+    vertical-align: 0.225em; }
+  
+  .fa-xs {
+    font-size: 0.75em;
+    line-height: 0.08333em;
+    vertical-align: 0.125em; }
+  
+  .fa-sm {
+    font-size: 0.875em;
+    line-height: 0.07143em;
+    vertical-align: 0.05357em; }
+  
+  .fa-lg {
+    font-size: 1.25em;
+    line-height: 0.05em;
+    vertical-align: -0.075em; }
+  
+  .fa-xl {
+    font-size: 1.5em;
+    line-height: 0.04167em;
+    vertical-align: -0.125em; }
+  
+  .fa-2xl {
+    font-size: 2em;
+    line-height: 0.03125em;
+    vertical-align: -0.1875em; }
+  
+  .fa-fw {
+    text-align: center;
+    width: 1.25em; }
+  
+  .fa-ul {
+    list-style-type: none;
+    margin-left: var(--fa-li-margin, 2.5em);
+    padding-left: 0; }
+    .fa-ul > li {
+      position: relative; }
+  
+  .fa-li {
+    left: calc(var(--fa-li-width, 2em) * -1);
+    position: absolute;
+    text-align: center;
+    width: var(--fa-li-width, 2em);
+    line-height: inherit; }
+  
+  .fa-border {
+    border-color: var(--fa-border-color, #eee);
+    border-radius: var(--fa-border-radius, 0.1em);
+    border-style: var(--fa-border-style, solid);
+    border-width: var(--fa-border-width, 0.08em);
+    padding: var(--fa-border-padding, 0.2em 0.25em 0.15em); }
+  
+  .fa-pull-left {
+    float: left;
+    margin-right: var(--fa-pull-margin, 0.3em); }
+  
+  .fa-pull-right {
+    float: right;
+    margin-left: var(--fa-pull-margin, 0.3em); }
+    
+  .fas,
+  .fa-solid {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+  }
+  
+  .fa-snowflake::before {
+    content: '\f2dc';
+  }
+  
+  .fa-sun::before {
+    content: '\f185';
+  }
+  
+  .fa-backward-step::before {
+    content: '\f048';
+  }
+  
+  .fa-forward-step::before {
+    content: '\f051';
+  }
+  
+  .fa-droplet::before {
+    content: '\f043';
+  }
+  
+  .fa-user-clock::before {
+    content: '\f4fd';
+  }
 
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px) {
-    .main-container {
-        margin: auto 10px;
-    }
-    .songTitle-text {
-        font-size: 1rem;
-    }
+  .main-container {
+    margin: auto 10px;
+  }
+  .songTitle-text {
+    font-size: 1rem;
+  }
 }
